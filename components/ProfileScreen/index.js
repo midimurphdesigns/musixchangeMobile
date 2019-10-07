@@ -1,15 +1,17 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Button, Text} from 'react-native';
 
 class ProfileScreen extends React.Component {
   static navigationOptions = {
-    title: 'Profile',
+    drawerLabel: 'Profile',
   };
   render() {
     return (
       <View>
-        <Text>Musixchange</Text>
-        <Text>By Kevin Murphy</Text>
+        <Button
+          title="Open Drawer"
+          onPress={() => this.props.navigation.toggleDrawer()}
+        />
       </View>
     );
   }

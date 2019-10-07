@@ -1,19 +1,20 @@
 import React from 'react';
 import {Button, View, Text} from 'react-native';
 
+import MenuButton from '../MenuButton';
+
 class HomeScreen extends React.Component {
   static navigationOptions = {
-    title: 'Home',
+    drawerLabel: 'Home',
   };
   render() {
     const {navigate} = this.props.navigation;
     return (
       <View>
-        <Text>Musixchange</Text>
-        <Text>By Kevin Murphy</Text>
+        <MenuButton />
         <Button
-          title="Profile"
-          onPress={() => navigate('Profile', {name: 'Jane'})}
+          title="Open Drawer"
+          onPress={() => this.props.navigation.toggleDrawer()}
         />
       </View>
     );
