@@ -8,7 +8,6 @@ class HomeScreen extends React.Component {
     drawerLabel: 'Home',
   };
   render() {
-    const {navigate} = this.props.navigation;
     return (
       <View>
         <MenuButton />
