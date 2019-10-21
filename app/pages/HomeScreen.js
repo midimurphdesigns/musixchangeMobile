@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, View, Text, StyleSheet, Platform} from 'react-native';
 
-import NavBar from '../NavBar';
+import NavBar from '../components/NavBar';
 
 class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -11,7 +11,7 @@ class HomeScreen extends React.Component {
     return (
       <View style={styles.wrapper}>
         <View style={styles.statusBar} />
-        <NavBar navigation={this.props.navigation} />
+        {/* <NavBar navigation={this.props.navigation} /> */}
       </View>
     );
   }

@@ -1,8 +1,8 @@
 import {Platform, Dimensions} from 'react-native';
 import {createDrawerNavigator} from 'react-navigation-drawer';
 
-import HomeScreen from '../components/HomeScreen';
-import ProfileScreen from '../components/ProfileScreen';
+import HomeScreen from '../pages/HomeScreen';
+import ProfileScreen from '../pages/ProfileScreen';
 
 const WIDTH = Dimensions.get('window').width;
 
