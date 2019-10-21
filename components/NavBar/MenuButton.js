@@ -21,9 +21,9 @@ export default class MenuButton extends React.Component {
 
 const styles = StyleSheet.create({
   menuIcon: {
-    zIndex: 0,
-    position: 'absolute',
-    top: 40,
-    left: 20,
+    // zIndex: 0,
+    // position: 'absolute',
+    // top: 38,
+    // left: 20,
   },
 });
