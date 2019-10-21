@@ -13,6 +13,7 @@ class HomeScreen extends React.Component {
         <MenuButton />
         <Button
           title="Open Drawer"
+          navigation={this.props.navigation}
           onPress={() => this.props.navigation.toggleDrawer()}
         />
       </View>

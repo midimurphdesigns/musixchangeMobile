@@ -4,6 +4,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 export default class MenuButton extends React.Component {
   render() {
+    console.log('this.props: ', this.props);
     return (
       <Icon
         name="menu"
@@ -11,7 +12,7 @@ export default class MenuButton extends React.Component {
         size={32}
         style={styles.menuIcon}
         onPress={() => {
-          console.log('pressed menu button');
+          this.props.navigation.toggleDrawer();
         }}
       />
     );
